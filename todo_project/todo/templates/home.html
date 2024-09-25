@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Todo List</h1>
+<a href="{% url 'admin:todo_todo_add' %}" class="btn btn-primary mb-3">Add Todo</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name of Thing Todo</th>
+            <th>Date to Complete</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for todo in todos %}
+        <tr>
+            <td>{{ todo.name }}</td>
+            <td>{{ todo.complete_by }}</td>
+            <td>
+                <a href="{% url 'admin:todo_todo_change' todo.pk %}" class="btn btn-sm btn-success">Edit</a>
+                <a href="{% url 'admin:todo_todo_delete' todo.pk %}" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<p>Total Todos: {{ todos|length }}</p>
+{% endblock %}

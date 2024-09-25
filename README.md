@@ -1,7 +1,9 @@
 # Assignment 2 - Todo Application
 
 ## Author
-
+Name: Revelle Williams
+CIS 218: Assignment 2 - Todo Application
+September 25, 2024
 
 
 ## Description
@@ -137,9 +139,9 @@ If you have more questions regarding this, don't hesitate to ask.
 | **Extra Credit** Full Heroku Deployment  |   **5**|
 
 ## Outside Resources Used
-
+none
 
 
 ## Known Problems, Issues, And/Or Errors in the Program
-
+none
 
